@@ -53,48 +53,48 @@ The socket is mounted on the back side which is the same side as the diode.
 
 As in the case of the diode, pre-solder on one side of the socket pad, place the socket, and hold it in place with tweezers and hand soldering. (Please be careful not to burn yourself when holding down by hand.)  
 As the picture is MX socket, please install Choc socket on the lower side.
-[socket] (https://user-images.githubusercontent.com/6285554/57197682-3de1b580-6fa5-11e9-90b1-fca894e1e7d2.png)
+![socket](https://user-images.githubusercontent.com/6285554/57197682-3de1b580-6fa5-11e9-90b1-fca894e1e7d2.png)
 
 For parts that require force, firmly solder both and check for freeness.  
-[2019-01-26 14 38 04] (https://user-images.githubusercontent.com/6285554/5196230-2250a580-24b2-11e9-94ce-591746c49f50.jpg)
+![2019-01-26000000000](https://user-images.githubusercontent.com/6285554/5196230-2250a580-24b2-11e9-94ce-591746c49f50.jpg)
 
 
 ## Soldering the TRRS jack reset switch
 Mount on the surface (the one with the sticker on the mark).  
 Attach the parts and fix them temporarily with masking tape. Turn over the board, solder it by making sure that the TRRS jack and reset switch do not float from the board.
-[2019-01-26 14 39 53] (https://user-images.githubusercontent.com/6285554/5196762-2c26d 880-24b3-11e9-9764-aa51975c1eef.jpg)
-[2019-01-26 14 43 23] (https://user-images.githubusercontent.com/6285554/51967628-2cbf6f00-24b3-11e9-96e6-8f003c53d57b.jpg)
+![2019-01-2600000](https://user-images.githubusercontent.com/6285554/5196762-2c26d 880-24b3-11e9-9764-aa51975c1eef.jpg)
+![2019-01-26000000000000](https://user-images.githubusercontent.com/6285554/51967628-2cbf6f00-24b3-11e9-96e6-8f003c53d57b.jpg)
 
 
 ## Attach the OLED
 Solder and jumper the four jumper terminals in the ProMicro section of the surface.
 Attach the connector for OLED. Do not pour a lot of solder, as it is easy for solder to flow into the connector.
-[unadjustednonraw_thumb_2db2] (https://user-images.githubusercontent.com/6285554/53293031-d45c6280-380f-11e9-8f1c-1c167b27cfd3.jpg)
+![unadjustednonraw_thumb_2db2] (https://user-images.githubusercontent.com/6285554/53293031-d45c6280-380f-11e9-8f1c-1c167b27cfd3.jpg)
 
 Insert the OLED pin into the socket, place the OLED module on it, and solder four places.
 
 
 ## Install Pro Micro  
 The pin header enclosed in the bag of ProMicro is not used. In the case of a kit purchased at a playhouse studio, a spring pin header is included, so use that.  
-[IMG_2662] (https://user-images.githubusercontent.com/6285554/57210525-f5171480-7017-11e9-9d92-3a345d53db94.jpg)  
+![IMG_2662](https://user-images.githubusercontent.com/6285554/57210525-f5171480-7017-11e9-9d92-3a345d53db94.jpg)  
 When attaching with a spring pin header (con-through), solder it according to the method described in the Helix build guide and then attach it to the Lily 58 PCB. [Helix build guide] (https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md#pro-micro)
 
 ** Check the lined line of the PCB and insert it into the ** PCB. Please be careful as the place to insert in right and left is different.
 
-[ProMicro_PCB] (https://user-images.githubusercontent.com/6285554/4891967-6a599a80-ed94-11e8-8e5d-6a6abca326a7.png)
+[ProMicro_PCB](https://user-images.githubusercontent.com/6285554/4891967-6a599a80-ed94-11e8-8e5d-6a6abca326a7.png)
 
 
 ## Attach the spacer
 Attach four 10 mm round spacers to the holes near ProMicro.  
 It is easy to insert a screw from the back of the board and attach the spacer from the top.
-[2019-01-26 15 02 38] (https://user-images.githubusercontent.com/6285554/51967859-c0913b00-24b3-11e9-966c-f3621ed398e5.jpg)
+[2019-01-26000](https://user-images.githubusercontent.com/6285554/51967859-c0913b00-24b3-11e9-966c-f3621ed398e5.jpg)
 
 The masking tape for the front and back identification applied first is peeled off here.
 
 ## Attach the key switch
 Attach the top plate spacer for alignment. (MX: 7 mm Choc: 4 mm)
-[2019-01-26 14 56 05] (https://user-images.githubusercontent.com/6285554/51967395-912dfe80-24b2-11e9-9cc7-b4520063f36c.jpg)
-[2019-01-26 14 56 24] (https://user-images.githubusercontent.com/6285554/51967376-83787900-24b2-11e9-82a0-850556daccfc.jpg)  
+[2019-01-260](https://user-images.githubusercontent.com/6285554/51967395-912dfe80-24b2-11e9-9cc7-b4520063f36c.jpg)
+[2019-01-2600](https://user-images.githubusercontent.com/6285554/51967376-83787900-24b2-11e9-82a0-850556daccfc.jpg)  
 
 Attach four key switches to the top plate. (In the case of Choc, 2 places may be easier to install)
 [2019-01-26 14 58 48] (https://user-images.githubusercontent.com/6285554/5196380-87a49680-24b2-11e9-80b9-a45564afc8cf.jpg)
