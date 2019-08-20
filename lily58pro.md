@@ -69,7 +69,7 @@ Attach the parts and fix them temporarily with masking tape. Turn over the board
 ## Attach the OLED
 Solder and jumper the four jumper terminals in the ProMicro section of the surface.
 Attach the connector for OLED. Do not pour a lot of solder, as it is easy for solder to flow into the connector.
-![unadjustednonraw_thumb_2db2] (https://user-images.githubusercontent.com/6285554/53293031-d45c6280-380f-11e9-8f1c-1c167b27cfd3.jpg)
+![unadjustednonraw_thumb_2db2](https://user-images.githubusercontent.com/6285554/53293031-d45c6280-380f-11e9-8f1c-1c167b27cfd3.jpg)
 
 Insert the OLED pin into the socket, place the OLED module on it, and solder four places.
 
@@ -77,49 +77,49 @@ Insert the OLED pin into the socket, place the OLED module on it, and solder fou
 ## Install Pro Micro  
 The pin header enclosed in the bag of ProMicro is not used. In the case of a kit purchased at a playhouse studio, a spring pin header is included, so use that.  
 ![IMG_2662](https://user-images.githubusercontent.com/6285554/57210525-f5171480-7017-11e9-9d92-3a345d53db94.jpg)  
-When attaching with a spring pin header (con-through), solder it according to the method described in the Helix build guide and then attach it to the Lily 58 PCB. [Helix build guide] (https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md#pro-micro)
+When attaching with a spring pin header (con-through), solder it according to the method described in the Helix build guide and then attach it to the Lily 58 PCB. [Helix build guide](https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md#pro-micro)
 
 ** Check the lined line of the PCB and insert it into the ** PCB. Please be careful as the place to insert in right and left is different.
 
-[ProMicro_PCB](https://user-images.githubusercontent.com/6285554/4891967-6a599a80-ed94-11e8-8e5d-6a6abca326a7.png)
+![ProMicro_PCB](https://user-images.githubusercontent.com/6285554/4891967-6a599a80-ed94-11e8-8e5d-6a6abca326a7.png)
 
 
 ## Attach the spacer
 Attach four 10 mm round spacers to the holes near ProMicro.  
 It is easy to insert a screw from the back of the board and attach the spacer from the top.
-[2019-01-26000](https://user-images.githubusercontent.com/6285554/51967859-c0913b00-24b3-11e9-966c-f3621ed398e5.jpg)
+![2019-01-26000](https://user-images.githubusercontent.com/6285554/51967859-c0913b00-24b3-11e9-966c-f3621ed398e5.jpg)
 
 The masking tape for the front and back identification applied first is peeled off here.
 
 ## Attach the key switch
 Attach the top plate spacer for alignment. (MX: 7 mm Choc: 4 mm)
-[2019-01-260](https://user-images.githubusercontent.com/6285554/51967395-912dfe80-24b2-11e9-9cc7-b4520063f36c.jpg)
-[2019-01-2600](https://user-images.githubusercontent.com/6285554/51967376-83787900-24b2-11e9-82a0-850556daccfc.jpg)  
+![2019-01-260](https://user-images.githubusercontent.com/6285554/51967395-912dfe80-24b2-11e9-9cc7-b4520063f36c.jpg)
+![2019-01-2600](https://user-images.githubusercontent.com/6285554/51967376-83787900-24b2-11e9-82a0-850556daccfc.jpg)  
 
 Attach four key switches to the top plate. (In the case of Choc, 2 places may be easier to install)
-[2019-01-26 14 58 48] (https://user-images.githubusercontent.com/6285554/5196380-87a49680-24b2-11e9-80b9-a45564afc8cf.jpg)
+![2019-01-26 14 58 48](https://user-images.githubusercontent.com/6285554/5196380-87a49680-24b2-11e9-80b9-a45564afc8cf.jpg)
   
 Insert the switch into the board for alignment, and align it.  
-[2019-01-26 15 01 12] (https://user-images.githubusercontent.com/6285554/51967478-c3d7f700-24b2-11e9-9f2f-4e75efc215a1.jpg)
+![2019-01-26 15 01 12](https://user-images.githubusercontent.com/6285554/51967478-c3d7f700-24b2-11e9-9f2f-4e75efc215a1.jpg)
 
 
 After confirming that there are no bends in the switch pins, etc., you can attach it firmly from the middle row and attach it outward finally.  
 Be careful because the KailhBOX switch and Choc switch need some power for installation.  
 After installation, push the switch again to make sure that installation is complete.
-[2019-01-26 15 10 06] (https://user-images.githubusercontent.com/6285554/51967840-b66f3c80-24b3-11e9-8f50-6d8d31fe85e5.jpg)
+![2019-01-26 15 10 06](https://user-images.githubusercontent.com/6285554/51967840-b66f3c80-24b3-11e9-8f50-6d8d31fe85e5.jpg)
 
 ## ProMicro Protective Acrylic Installation
 Peel off the acrylic protective paper for ProMicro upper part and attach it.  
 ** Mount with the wider side outwards **. Screw the top.
-[plate] (https://user-images.githubusercontent.com/6285554/48837829-c4288780-edc9-11e8-8efb-6714d8e68e92.png)
+![plate](https://user-images.githubusercontent.com/6285554/48837829-c4288780-edc9-11e8-8efb-6714d8e68e92.png)
 
-[2019-01-26 15 21 15] (https://user-images.githubusercontent.com/6285554/51968422-b8d19680-24b3-11e9-8402-85180ce10403.jpg)
+![2019-01-26 15 21 15](https://user-images.githubusercontent.com/6285554/51968422-b8d19680-24b3-11e9-8402-85180ce10403.jpg)
 
 ## Write key map
-You need to be ready to write a keymap. It is described on the assumption that it has been introduced. [Please refer to the official page of qmk etc. ] (https://docs.qmk.fm/#/getting_started_build_tools) (WIndows: MSYS2 Mac, Linux: avrdude)
+You need to be ready to write a keymap. It is described on the assumption that it has been introduced. [Please refer to the official page of qmk etc. ](https://docs.qmk.fm/#/getting_started_build_tools) (WIndows: MSYS2 Mac, Linux: avrdude)
 
 By using QMK Toolbox, there is no need to build an environment, and writing can be performed using a GUI. (It is recommended to build the above writing environment when customizing)
-[qmk / qmk_toolbox] (https://github.com/qmk/qmk_toolbox/releases)  
+[qmk / qmk_toolbox](https://github.com/qmk/qmk_toolbox/releases)  
 
  
 Execute the following in the folder hierarchy of qmk_firmware to write the default key map of Lily 58
@@ -132,13 +132,13 @@ Please write to the other keyboard in the same way as above.
 
 The Default key map is as follows.  
 Since the key map layout is made on the assumption that it is used in the macOS / US keyboard environment, try creating a key map that matches the user, such as adding a key map such as changing to the JIS array or switching between English and Kana. The best of my own keyboard.  
-[lily58_default] (https://user-images.githubusercontent.com/6285554/47273241-38ee8300-d5cc-11e8-9099-10c1b35e24fc.png)
+![lily58_default](https://user-images.githubusercontent.com/6285554/47273241-38ee8300-d5cc-11e8-9099-10c1b35e24fc.png)
 
 ## Operation check
 Connect the left and right with a TRRS cable, connect the MicroUSB cable to ProMicro on the left side (in the case of the default key map), and check if the key responds.  
 It is completed by attaching four rubber feet to the back. Thank you for your hard work.
-[2019-01-26 15 24 52] (https://user-images.githubusercontent.com/6285554/51967992-24b3ff00-24b4-11e9-8cd3-1e679094682f.jpg)
-[unadjustednonraw_thumb_2ddc] (https://user-images.githubusercontent.com/6285554/53640050-6203dc00-3c6e-11e9-9434-5591ed3e414f.jpg)
+![2019-01-26 15 24 52](https://user-images.githubusercontent.com/6285554/51967992-24b3ff00-24b4-11e9-8cd3-1e679094682f.jpg)
+![unadjustednonraw_thumb_2ddc](https://user-images.githubusercontent.com/6285554/53640050-6203dc00-3c6e-11e9-9434-5591ed3e414f.jpg)
 
 
 ## When in trouble
