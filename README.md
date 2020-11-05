@@ -8,5 +8,5 @@ This repo is for all of the build guides that I've done and any other relevant i
 
 # General
 
-- [Build tips](build-tips.md)
-- [Troubleshooting](troubleshooting.md)
+- [Build tips](docs/build-tips.md)
+- [Troubleshooting](docs/troubleshooting.md)
