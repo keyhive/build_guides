@@ -95,6 +95,7 @@ Attach the top plate spacer for alignment. (MX: 7 mm Choc: 4 mm)
 
 Attach four key switches to the top plate. (In the case of Choc, 2 places may be easier to install)
 ![2019-01-26 14 58 48] https://user-images.githubusercontent.com/6285554/5196380-87a49680-24b2-11e9-80b9-a45564afc8cf.jpg)
+
   
 Insert the switch into the board for alignment, and align it.  
 ![2019-01-26 15 01 12](https://user-images.githubusercontent.com/6285554/51967478-c3d7f700-24b2-11e9-9f2f-4e75efc215a1.jpg)
@@ -104,6 +105,7 @@ After confirming that there are no bends in the switch pins or other issues, you
   
 **Be careful because the Kailh BOX switcs and Choc switchs require a bit of force for installation**.  
 After installation, push the switch again to make sure that the keys are fully seated and the switches operate correctly.
+
 ![2019-01-26 15 10 06](https://user-images.githubusercontent.com/6285554/51967840-b66f3c80-24b3-11e9-8f50-6d8d31fe85e5.jpg)
 
 ## ProMicro Protective Acrylic Installation
