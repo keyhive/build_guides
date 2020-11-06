@@ -24,7 +24,7 @@ Most DIY keyboards use diodes. There are two types, through-hole (also abbreviat
 
 Diodes have polarity, meaning that they have a specific direction they must be soldered in to function properly. This polarity is usually also printed on the PCB. The symbol for diodes usually looks like this `▶❙`, a triangle with a bar across the point. The diodes themselves also usually have a stripe printed or etched on them. **The orientation of the lines should match when soldered.**
 
-![Image of diodes next to an SMD pad showing the correct orientation, where the line of the printed symbol is the same direction as the line on the diode.](./images/build-tips/diodes-polarity.jpg)
+![Image of diodes next to an SMD pad showing the correct orientation, where the line of the printed symbol is the same direction as the line on the diode.](./images/build-tips/diodes-polarity.jpg =250x250)
 
 Diodes are not sensitive to heat.
 
