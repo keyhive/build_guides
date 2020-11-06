@@ -19,13 +19,19 @@ Available at: https://keyhive.xyz/shop/corne-v3
 
 ## Solder diodes
 
-Diodes are fairly robust and they have polarity, which means that the orientation matters. The stripe on the diode should match the silkscreen on the PCB, like so: ![insert image]()
+Diodes are fairly robust and have polarity, which means that the orientation matters. The stripe on the diode should match the silkscreen on the PCB, like so:
+
+![Stripe on diode should match the line of the diode symbol on the PCB](docs/images/build-tips/diodes-polarity.jpg)
 
 The simplest approach is to add a little bit of solder to one pad, place the diode and solder to one pad, make adjustments, and then solder the other pad.
+
+After you've soldered all of them, audit your work. Make sure all the diodes are correct before moving on.
 
 ## Solder hot swap sockets
 
 Place the hot swap socket into the holes of the PCB. Solder one side, and then the other.
+
+After you've soldered all of them, audit your work. Make sure the sockets are secured to the pads underneath them by wiggling them very little force using a pair of tweezers. They should not move.
 
 ## Flash controller
 
