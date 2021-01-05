@@ -116,7 +116,7 @@ Peel off the acrylic protective paper for ProMicro upper part and attach it.
 ![2019-01-26 15 21 15](https://user-images.githubusercontent.com/6285554/51968422-b8d19680-24b3-11e9-8402-85180ce10403.jpg)
 
 ## Write a key map
-You need to be ready to write a keymap. The steps assume that you have been introduced to the process. [Please refer to the official page of QMK]](https://docs.qmk.fm/#/getting_started_build_tools) if you are unfamilliar 
+You need to be ready to write a keymap. The steps assume that you have been introduced to the process. [Please refer to the official page of QMK](https://docs.qmk.fm/#/getting_started_build_tools) if you are unfamilliar 
 Required tools:
 * **Windows**: [MSYS2](https://www.msys2.org)
 * **Mac, Linux**: [avrdude](https://www.nongnu.org/avrdude)
