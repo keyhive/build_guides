@@ -32,6 +32,10 @@ Available at: https://keyhive.xyz/shop/lily58
 1. [Solder controller](#solder-controller)
 1. [Solder the reset button](#Solder-reset-button)
 1. [Test the keyboard](#test-the-keyboard)
+1. [Solder OLEDs](#solder-oleds)
+1. [Solder TRRS jacks](#solder-trrs-jacks)
+1. [Install OLED cover](#install-oled-cover)
+1. [Install switches](#install-switches)
 
 ## Solder diodes
 
