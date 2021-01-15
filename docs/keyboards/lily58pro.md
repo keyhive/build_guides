@@ -1,211 +1,108 @@
-# Lily58 Pro Build Guide [WIP]
+# Lily58 Pro
 
 Available at: https://keyhive.xyz/shop/lily58
 
+![Lily58 PCBs](https://user-images.githubusercontent.com/6285554/51967194-0947f480-24b2-11e9-860f-e45197cf0983.jpg)
+
 ## Required parts
 
-| Part name                         | Quantity       | Remarks                                                                                  | Photo |
-| --------------------------------- | -------------- | ---------------------------------------------------------------------------------------- | ----- |
-| Lily 58 PCB                       | 2 pieces       |                                                                                          |
-| Lily 58 case                      | 1 set 4 pieces |                                                                                          |
-| ProMicro                          | 2 pieces       |                                                                                          |       |
-| Key switch (CherryMX, kailh choc) | 58 pieces      | MX switch and choc switch use either exclusively                                         |       |
-| Kailh Switch socket               | 58 pieces      | Necessary for key switch installation                                                    |       |
-| Key Caps                          | 58 pieces      | 1.5U parts can be 1U                                                                     |       |
-| Diodes 1N4148W                    | 58 pieces      |                                                                                          |       |
-| Tact switch                       | 2 pieces       |                                                                                          |       |
-| TRRS jacks                        | 2 pieces       |                                                                                          |
-| M2 Spacers                        | 10, 4          | Choc: 4 mm, MX: 7 mm                                                                     |       |
-| M2 screw                          | 28 pieces      |                                                                                          |       |
-| TRRS cable                        | 1 cable        | Cable for 3.5 mm audio, also called AUX cable (4-pole cable recommended)                 |       |
-| Micro USB Cable                   | 1 pcs          | Magnet type recommended due to the low durability of the connector on the Pro Micro side |       |
-| OLED module                       | 2 pieces       |                                                                                          |       |
+| Part                  | Qty | Description                                                              |
+| --------------------- | --- | ------------------------------------------------------------------------ |
+| Lily 58 PCB           | 2   | PCBs are reversible                                                      |
+| Lily 58 plates        | 1   | 2 switch plates, 2 bottom plates                                         |
+| Pro micro             | 2   |                                                                          |
+| Switches              | 58  | Either MX or choc switch                                                 |
+| Kailh hot swap socket | 58  |                                                                          |
+| Diodes 1N4148W        | 58  | throughhole diodes are not recommended due to a footprint error          |
+| Tactile switch        | 2   | 6x3x2 right angle tactile switch                                         |
+| TRRS jacks            | 2   |                                                                          |
+| M2 Standoffs          | 10  | Choc: 4 mm, MX: 7 mm. Also known as spacers                              |
+| M2 screw              | 28  | 6mm is ideal                                                             |
+| TRRS cable            | 1   | Cable for 3.5 mm audio, also called AUX cable (4-pole cable recommended) |
+| Micro USB Cable       | 1   |                                                                          |
+| OLED module           | 2   |                                                                          |
+| Keycaps               | 58  | 56 1u keys, 2 1.5u keys for the thumb keys                               |
 
-## Introduction
+## Instructions
 
-The PCB is reversible with both of the PCBs being exactly the same.
-![5](https://user-images.githubusercontent.com/6285554/51967194-0947f480-24b2-11e9-860f-e45197cf0983.jpg)
-![unadjustednonraw_thumb_2ccb](https://user-images.githubusercontent.com/6285554/53638905-1d2a7600-3c6b-11e9-9a39-a121c9b407b6.jpg)
+1. Solder
+   - [diodes](#solder-diodes)
+   - [hot swap sockets](#solder-hot-swap-sockets)
+1. [Flash controller](#flash-controller)
+1. [Solder controller](#solder-controller)
+1. [Solder the reset button](#Solder-reset-button)
+1. [Test the keyboard](#test-the-keyboard)
+1. [Solder OLEDs](#solder-oleds)
+1. [Solder TRRS jacks](#solder-trrs-jacks)
+1. [Install OLED cover](#install-oled-cover)
+1. [Install switches](#install-switches)
 
-## Attach the diodes
+## Solder diodes
 
-The diodes provided are through hole but SMD works better (I didn't realize this until later). If you do SMD, be careful to only use one at a time because they get lost easily
+Soldering diodes is relatively straightforward. Refer to [Soldering diodes](../basic/soldering-diodes.md) if you need further guidance.
+
 ![2019-01-26](https://user-images.githubusercontent.com/6285554/51967206-1238c600-24b2-11e9-9617-01d8755c5b7f.jpg)
 
-All of the components are soldered to the **back/bottom side**.
+## Solder Kailh hot swap sockets
 
-Solder with the diode wire always pointing in the direction of the triangle bar on the board display as shown in the following figure. If the direction is incorrect, the key will not respond.
-![2019-02-28](https://user-images.githubusercontent.com/6285554/53542561-53300300-3b62-11e9-8b83-5758ce400491.png)
+Refer to [Soldering Kailh hot swap sockets](.../basic/soldering-diodes.md) if you need further guidance.
 
-Apply preliminary solder (melt the solder a little on the substrate) on one pad of the PCB diode.
-![2019-01-26](https://user-images.githubusercontent.com/6285554/51965724-cbe16800-24ad-11e9-8afc-17c5b8eebda8.jpg)
+![Kailh hot swap sockets orientation](https://user-images.githubusercontent.com/6285554/57197682-3de1b580-6fa5-11e9-90b1-fca894e1e7d2.png)
 
-Then use tweezers to solder one side of the diode using pre-soldering to secure the diode.
-![2019-01-26](https://user-images.githubusercontent.com/6285554/51967222-1cf35b00-24b2-11e9-9624-26ff45f7bc9b.jpg)
-Then the other one is also soldered.
+## Flash controller
 
-When all diodes have been soldered, check for missing spots.
-![2019-01-26](https://user-images.githubusercontent.com/6285554/51967226-1f55b500-24b2-11e9-93f5-2802156a4d10.jpg)
+Flash the controller (pro micro, Elite C, nice!nano, etc) with the firmware. This ensures that the controller works completely **before** soldering it permanently to the board.
 
-## Solder the sockets
+The default crkbd firmware does not have LEDs enabled so if you plan on having LEDs this would be the time to modify the firmware to enable it.
 
-The socket is mounted on the back side which is the same side as the diode.
+## Solder controller
 
-As in the case of the diode, pre-solder on one side of the socket pad, place the socket, and hold it in place with tweezers and hand soldering. (Please be careful not to burn yourself when holding down by hand.)  
-As the picture is MX socket, please install Choc socket on the lower side.
-![socket](https://user-images.githubusercontent.com/6285554/57197682-3de1b580-6fa5-11e9-90b1-fca894e1e7d2.png)
+Refer to [Soldering the controller](../basic/soldering-the-controller.md) if you need further guidance.
 
-For parts that require force, firmly solder both and check for freeness.  
-![2019-01-26000000000](https://user-images.githubusercontent.com/6285554/5196230-2250a580-24b2-11e9-94ce-591746c49f50.jpg)
+## Solder reset button
 
-## Soldering the TRRS jacks and reset switches
+Insert into holes. Solder in place on the bottom side of the pcb.
 
-Mount on the surface (the one with the sticker on the mark).  
-Attach the parts and fix them temporarily with masking tape. Turn over the board, solder it by making sure that the TRRS jack and reset switch do not float from the board.
-![2019-01-2600000](https://user-images.githubusercontent.com/6285554/5196762-2c26d880-24b3-11e9-9764-aa51975c1eef.jpg)
-![2019-01-26000000000000](https://user-images.githubusercontent.com/6285554/51967628-2cbf6f00-24b3-11e9-96e6-8f003c53d57b.jpg)
+## Test the keyboard
 
-## Attach the OLED
+At this point it should function as a keyboard. When you plug it in, the on-board LEDs should turn on. Insert a switch into a hot swap socket and [test that a keycode is pressed](https://www.keyboardtester.com/tester.html). You might consider testing every key in case there are problems with the diodes or hot swap sockets.
 
-Solder and jumper the four jumper terminals in the ProMicro section of the surface.
-Attach the connector for OLED. Do not pour a lot of solder, as it is easy for solder to flow into the connector.
-![unadjustednonraw_thumb_2db2](https://user-images.githubusercontent.com/6285554/53293031-d45c6280-380f-11e9-8f1c-1c167b27cfd3.jpg)
+After this, solder remaining components.
 
-Insert the OLED pin into the socket, place the OLED module on it, and solder four places.
+## Solder OLEDs
 
-## Install Pro Micro
+> If you've socketed the controller, also consider socketing the OLEDs else the controller will be trapped underneath it.
 
-The pin header enclosed in the bag of ProMicro is not used. In the case of a kit purchased at a playhouse studio, a spring pin header is included, so use that.  
-![IMG_2662](https://user-images.githubusercontent.com/6285554/57210525-f5171480-7017-11e9-9d92-3a345d53db94.jpg)  
-When attaching with a spring pin header (con-through), solder it according to the method described in the [Helix build guide](https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_jp.md#pro-micro) and then attach it to the Lily 58 PCB.
+Solder the 4 jumper pads on the same side that the pro micro will be mounted on. DO NOT FORGET THESE; they will be very difficult to access after the pro micro is soldered into place.
 
-**Check the lines marked on the PCB and insert it into the PCB**. Please be careful as the place to insert the ProMicro is different for the left and right PCBs.
+![Image showing the 4 jumper pads bridged with solder](https://user-images.githubusercontent.com/6285554/53293031-d45c6280-380f-11e9-8f1c-1c167b27cfd3.jpg)
 
-![ProMicro_PCB](https://user-images.githubusercontent.com/6285554/4891967-6a599a80-ed94-11e8-8e5d-6a6abca326a7.png)
+Insert headers into holes. Use electrical tape to secure in place while you solder the holes on the bottom side of the PCB.
 
-## Attach the spacer
+> ⚠︎ The OLED is not required but **if you omit it, you must disable it in the firmware**. If you do not, you will experience "jittery" keystrokes as if some keys were lost while in transit. Disabling it in the firmware will fix this behavior.
 
-Attach four 10 mm round spacers to the holes near ProMicro.  
-It is easy to insert a screw from the back of the board and attach the spacer from the top.
-![2019-01-26000](https://user-images.githubusercontent.com/6285554/51967859-c0913b00-24b3-11e9-966c-f3621ed398e5.jpg)
+## Solder TRRS jacks
 
-The masking tape for the front and back identification applied first is peeled off here.
+Insert into holes. Solder in place on the bottom side of the pcb
 
-## Attach the key switch
+![Image showing TRRS jacks held in place with tape](https://user-images.githubusercontent.com/6285554/51967628-2cbf6f00-24b3-11e9-96e6-8f003c53d57b.jpg)
 
-Attach the top plate spacer for alignment. (MX: 7 mm Choc: 4 mm)
-![2019-01-260](https://user-images.githubusercontent.com/6285554/51967395-912dfe80-24b2-11e9-9cc7-b4520063f36c.jpg)
-![2019-01-2600](https://user-images.githubusercontent.com/6285554/51967376-83787900-24b2-11e9-82a0-850556daccfc.jpg)
+## Install OLED cover
 
-Attach four key switches to the top plate. (In the case of Choc, 2 places may be easier to install)
-![2019-01-26 14 58 48] https://user-images.githubusercontent.com/6285554/5196380-87a49680-24b2-11e9-80b9-a45564afc8cf.jpg)
+Install the 4 spacers into the holes just below the pro micro, screw from the bottom.
 
-Insert the switch into the board for alignment, and align it.  
-![2019-01-26 15 01 12](https://user-images.githubusercontent.com/6285554/51967478-c3d7f700-24b2-11e9-9f2f-4e75efc215a1.jpg)
+![](https://user-images.githubusercontent.com/6285554/51967859-c0913b00-24b3-11e9-966c-f3621ed398e5.jpg)
 
-After confirming that there are no bends in the switch pins or other issues, you can attach it firmly starting in the middle row then attach it outward.
+![](https://user-images.githubusercontent.com/6285554/48837829-c4288780-edc9-11e8-8efb-6714d8e68e92.png)
 
-**Be careful because the Kailh BOX switcs and Choc switchs require a bit of force for installation**.  
-After installation, push the switch again to make sure that the keys are fully seated and the switches operate correctly.
+## Install switches
 
-![2019-01-26 15 10 06](https://user-images.githubusercontent.com/6285554/51967840-b66f3c80-24b3-11e9-8f50-6d8d31fe85e5.jpg)
+Install the standoffs onto the switch plates.
 
-## ProMicro Protective Acrylic Installation
+![](https://user-images.githubusercontent.com/6285554/51967395-912dfe80-24b2-11e9-9cc7-b4520063f36c.jpg)
 
-Peel off the acrylic protective paper for ProMicro upper part and attach it.  
-**Mount with the wider side outwards, towards the edge of the PCB**. Screw in the top plate
-![top plate](https://user-images.githubusercontent.com/6285554/48837829-c4288780-edc9-11e8-8efb-6714d8e68e92.png)
+![](https://user-images.githubusercontent.com/6285554/51967376-83787900-24b2-11e9-82a0-850556daccfc.jpg)
 
-![2019-01-26 15 21 15](https://user-images.githubusercontent.com/6285554/51968422-b8d19680-24b3-11e9-8402-85180ce10403.jpg)
+Insert switches into the plate. Begin by placing one on each of the corners of the PCB to give you some stability. Be cautious of bent pins when pushing the switch down. **Kailh Box and choc switches require a bit of force for installation**.
 
-## Write a key map
-
-You need to be ready to write a keymap. The steps assume that you have been introduced to the process. [Please refer to the official page of QMK](https://docs.qmk.fm/#/getting_started_build_tools) if you are unfamilliar
-Required tools:
-
-- **Windows**: [MSYS2](https://www.msys2.org)
-- **Mac, Linux**: [avrdude](https://www.nongnu.org/avrdude)
-
-By using QMK Toolbox, there is no need to build an environment, and writing the keymap can be performed using a GUI. (It is recommended to build the above writing environment when customizing)
-[qmk / qmk_toolbox](https://github.com/qmk/qmk_toolbox/releases)
-
-## Write key map
-
-You need to be ready to write a keymap. It is described on the assumption that it has been introduced. [Please refer to the official page of qmk etc. ](https://docs.qmk.fm/#/getting_started_build_tools) (WIndows: MSYS2 Mac, Linux: avrdude)
-
-By using QMK Toolbox, there is no need to build an environment, and writing can be performed using a GUI. (It is recommended to build the above writing environment when customizing)
-[qmk / qmk_toolbox](https://github.com/qmk/qmk_toolbox/releases)
-
-Execute the following in the folder hierarchy of qmk_firmware to write the default key map of Lily 58
-
-```bash
-sudo make lily58:default:avrdude
-```
-
-When `Detecting USB port, reset your controller now ...` is displayed, press the reset button on the keyboard to start writing.  
-Please write to the other keyboard in the same way as above.
-
-The Default key map is as follows.  
-Since the key map layout is made on the assumption that it is used in the macOS / US keyboard environment, try creating a key map that matches the user, such as adding a key map such as changing to the JIS array or switching between English and Kana. The best of my own keyboard.  
-![lily58_default](https://user-images.githubusercontent.com/6285554/47273241-38ee8300-d5cc-11e8-9099-10c1b35e24fc.png)
-
-## Operation check
-
-Connect the left and right with a TRRS cable, connect the MicroUSB cable to ProMicro on the left side (in the case of the default key map), and check if the key responds.  
-It is completed by attaching four rubber feet to the back. Thank you for your hard work.
-![2019-01-26 15 24 52](https://user-images.githubusercontent.com/6285554/51967992-24b3ff00-24b4-11e9-8cd3-1e679094682f.jpg)
-![unadjustednonraw_thumb_2ddc](https://user-images.githubusercontent.com/6285554/53640050-6203dc00-3c6e-11e9-9434-5591ed3e414f.jpg)
-
-## Troubleshooting
-
-### Q: One column (multiple columns) or one row (multiple rows) key switch does not respond
-
-A:ProMicro may not be soldered and attached firmly. Check again, and re-solder and install if necessary.
-
-### Q: The key switch does not respond alone
-
-A. There may be a problem with the key switch insertion, socket or diode soldering. Inspect the switch, diode, and socket to determine which is causing the problem.
-
-In the case of key switch insertion, after removing the key switch once make sure that there is no bending of the pin and then push it in again to install it.
-
-In the case of socket soldering, re-solder the soldering point of the problem socket and pour the solder if necessary.
-
-In the case of diode soldering, check the direction of the diode in question. If it is wrong, remove it and re-solder it.
-If the contacts are not fully soldered, please re-solder.
-
-### Q. A symbol different from the symbol input by "@" or "[" etc. is input (Windows etc.)
-
-Since recognition of keyboard is recognized as JIS keyboard on OS, another symbol will be input when inputting with Lily 58 (treated as US keyboard).  
-Please set Lily 58 as a US keyboard in the keyboard setting of OS. After switching, switching to Japanese input becomes the switching key for the US keyboard, and it differs from the JIS keyboard, so please be careful (it can be customized with the key map etc.).
-
-**If you have any problems, please feel free to send a message to the "# Lily58" channel on Discord ("Self-Made Keyboards in Japan" (https://discordapp.com/invite/NM7XtDW)) or Twitter: @F_YUUCHI**
-
-## Change the key map
-
-The self-made keyboard is operating using QMK firmware used above.  
-The QMK firmware is highly customizable, and you can customize it with very high functionality simply by editing the key map.
-
-### Edit keymap.c and customize
-
-When customizing key map, copy the folder `qmk_firmware/keyboards/lily58/keymaps/default` to any new name. Here we use `my_keymap` for example:
-
-```bash
-cd qmk_firmware/keyboards/lily58/keymaps
-cp default my_keymap
-```
-
-Modify the internal keymap.c accordingly.  
-Please refer to the following [official QMK documentation](https://docs.qmk.fm/#/keycodes) for the key codes.
-
-After changing the key map, re-compile KMK using the new keymap:
-
-```bash
-sudo make lily58:my_keymap:avrdude
-```
-
-If you get an error, please check the [KMK firmware tutorial](https://docs.qmk.fm/#/newbs).
-
-### How to customize using QMK Configurator (deprecated)
-
-If you use [QMK Configurator](https://config.qmk.fm/#/lily58/rev1/LAYOUT), you can create an original keymap on the browser without editing the keymap.c file.  
-Load the downloaded json file into the QMK Toolbox and write it.
+![](https://user-images.githubusercontent.com/6285554/51967840-b66f3c80-24b3-11e9-8f50-6d8d31fe85e5.jpg)

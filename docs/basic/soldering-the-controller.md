@@ -1,5 +1,7 @@
 # Soldering the controller
 
+Use the set of holes that are outlined by the silkscreen on the side the controller will be installed on.
+
 ## with headers
 
 Insert the headers. Solder in place.
