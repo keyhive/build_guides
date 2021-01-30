@@ -145,10 +145,13 @@ Preassembled keyboards with nice!nanos will likely come with the default ZMK key
 
 To flash:
 
-- [Setup your ZMK environment](https://zmkfirmware.dev/docs/user-setup#installing-the-firmware) by following the official ZMK documentation.
-- [Download the firmware files.](https://zmkfirmware.dev/docs/user-setup#download-the-archive)
-- [Flash the .uf2 files.](https://zmkfirmware.dev/docs/user-setup#flashing-uf2-files)
+- [Download the firmware files](https://github.com/keyhive/zmk-config/actions/runs/524075130#artifacts) from the Keyhive repo.
+
+  This has RGB and OLEDs enabled by default, and [adds keycodes for controlling the RGB to the default keymap](https://github.com/keyhive/zmk-config/blob/main/config/corne.keymap#L38).
+
+- Unzip the firmware.zip and navigate/open the newly created folder.
+- [Flash the corresponding .uf2 files](https://zmkfirmware.dev/docs/user-setup#flashing-uf2-files) to each controller.
 - [Pair the two halves](https://zmkfirmware.dev/docs/user-setup#connecting-split-keyboard-halves) by resetting them at the same time. Within a few seconds of resetting, both halves should automatically connect to each other.
-  - If you pair the primary side _before_ pairng to the secondary side, you will need to clear the connection from the crkbd and your peer device, pair the halves, then re-pair to the peer device.
+  - If you pair the primary side to the peer device (your computer or mobile device) _before_ pairing to the secondary side, you will need to clear the connection from the crkbd and peer device, pair the two halves, then re-pair to the peer device.
   - If you have trouble with the halves connecting to each other, refer to the ["Split Keyboard Halves Unable to Pair" ZMK documentation.](https://zmkfirmware.dev/docs/troubleshooting/#split-keyboard-halves-unable-to-pair)
 - [Pair your keyboard](https://zmkfirmware.dev/docs/user-setup#wirelessly-connecting-your-keyboard) to your device.
