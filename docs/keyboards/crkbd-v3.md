@@ -19,7 +19,7 @@ Additional images at: https://imgur.com/a/p1oGbG0
    - [TRRS jacks](#Solder-TRRS-jacks)
 1. [Remove from scaffolding](#Remove-from-scaffolding)
 1. [Assemble into case](#Assemble-into-case)
-1. [Flash firmware](#Flash-firmware)
+1. [Flashing firmware](#Flashing-firmware)
 
 ## Solder diodes
 
