@@ -19,6 +19,7 @@ Additional images at: https://imgur.com/a/p1oGbG0
    - [TRRS jacks](#Solder-TRRS-jacks)
 1. [Remove from scaffolding](#Remove-from-scaffolding)
 1. [Assemble into case](#Assemble-into-case)
+1. [Flashing firmware](#Flashing-firmware)
 
 ## Solder diodes
 
@@ -97,3 +98,60 @@ At this point, you are ready to assemble the rest of the keyboard. These steps m
 - Install standoffs onto the switch plate
 - Install the switches into plate and into the pcb
 - Screw bottom plate
+
+## Flashing firmware
+
+Flashing the crkbd depends on the controller you used. Because of this, this guide will be high-level just to get you started with a functioning keyboard.
+
+For the pro micro and Elite C controllers, [QMK](https://docs.qmk.fm/) is recommended. For the nice!nano, [ZMK](https://zmkfirmware.dev/) is recommended.
+
+### QMK
+
+Preassembled keyboards with Elite C/pro micros will likely come with the default VIA keymap enabled. Learn more about VIA at https://caniusevia.com/
+
+To flash:
+
+- [Setup your QMK environment](https://docs.qmk.fm/#/newbs_getting_started?id=set-up-your-environment) by following the official QMK documentation
+  - [QMK Toolbox](https://docs.qmk.fm/#/newbs_flashing?id=flashing-your-keyboard-with-qmk-toolbox) is a helper tool to flash your keyboard with but we've experienced many issues with it such that we **do not recommend it** and **will not provide support** for it. The qmk-cli is the most reliable way to flash your crkbd.
+- Compile and flash your keyboard using the default by executing the following command:
+
+```sh
+# for pro micro
+qmk flash -kb crkbd -km default
+
+# for Elite C (or any other controller that uses dfu bootloader)
+qmk flash -kb crkbd -km default -bl dfu
+```
+
+> NOTE: The default firmware does not come with the LEDs enabled in order to save space on your controller. Refer to the [crkbd docs within the QMK repo](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd#rgb-matrix) for instructions on how to enable this yourself.
+
+#### VIA keymap
+
+The VIA keymap may be desireable as it allows you to use [VIA](https://caniusevia.com/) to make changes to your keyboard on-the-fly. The command to do so is slightly different.
+
+```sh
+# for pro micro
+qmk flash -kb crkbd/rev1/common -km via
+
+# for Elite C
+qmk flash -kb crkbd/rev1/common -km via -bl dfu
+```
+
+### ZMK
+
+Preassembled keyboards with nice!nanos will likely come with the default ZMK keymap enabled.
+
+> NOTE: [ZMK only supports wireless split](https://zmkfirmware.dev/docs/faq/#does-zmk-support-wired-split) which means that you must use nice!nanos on both sides. It cannot operate using a TRRS cable (yet).
+
+To flash:
+
+- [Download the firmware files](https://github.com/keyhive/zmk-config/actions/runs/524075130#artifacts) from the Keyhive repo.
+
+  This has RGB and OLEDs enabled by default, and [adds keycodes for controlling the RGB to the default keymap](https://github.com/keyhive/zmk-config/blob/main/config/corne.keymap#L38).
+
+- Unzip the firmware.zip and navigate/open the newly created folder.
+- [Flash the corresponding .uf2 files](https://zmkfirmware.dev/docs/user-setup#flashing-uf2-files) to each controller.
+- [Pair the two halves](https://zmkfirmware.dev/docs/user-setup#connecting-split-keyboard-halves) by resetting them at the same time. Within a few seconds of resetting, both halves should automatically connect to each other.
+  - If you pair the primary side to the peer device (your computer or mobile device) _before_ pairing to the secondary side, you will need to clear the connection from the crkbd and peer device, pair the two halves, then re-pair to the peer device.
+  - If you have trouble with the halves connecting to each other, refer to the ["Split Keyboard Halves Unable to Pair" ZMK documentation.](https://zmkfirmware.dev/docs/troubleshooting/#split-keyboard-halves-unable-to-pair)
+- [Pair your keyboard](https://zmkfirmware.dev/docs/user-setup#wirelessly-connecting-your-keyboard) to your device.
