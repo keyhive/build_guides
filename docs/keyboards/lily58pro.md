@@ -53,7 +53,7 @@ Refer to [Soldering Kailh hot swap sockets](.../basic/soldering-diodes.md) if yo
 
 Flash the controller (pro micro, Elite C, nice!nano, etc) with the firmware. This ensures that the controller works completely **before** soldering it permanently to the board.
 
-The default crkbd firmware does not have LEDs enabled so if you plan on having LEDs this would be the time to modify the firmware to enable it.
+The [default lily58 keymap](https://github.com/qmk/qmk_firmware/tree/master/keyboards/lily58/keymaps/default) does not have LEDs enabled so if you plan on having LEDs this would be the time to modify the firmware to enable it.
 
 ## Solder controller
 
