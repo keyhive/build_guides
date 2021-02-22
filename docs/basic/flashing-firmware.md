@@ -24,6 +24,16 @@ ZMK is a nacient keyboard firmware that aims to reach feature parity with QMK wh
 Helpful resources:
 
 - [Workaround for MacOS BLE stack problems](https://github.com/zmkfirmware/zmk/issues/278)
+- LEDs cause battery drain even if not enabled (known as "LED leak") causing poor battery life
+    - This is a known issue in ZMK which should be resolved once [zmkfirmware/zmk#156](https://github.com/zmkfirmware/zmk/pull/516) is merged
+    - Another solution is to add a hardware on/off switch connected to the battery wires to manually cut power
+        - We do not currently provide instructions on how to do this but may in the future; you will have better luck asking in the ZMK Discord for assistance
+        - Those who have achieved this have used:
+          - Slide toggle switch ([Digikey](https://www.digikey.com/en/products/detail/e-switch/EG1201A/101723?utm_adgroup=Slide%20Switches&utm_source=google&utm_medium=cpc&utm_campaign=Shopping_Product_Switches_NEW&utm_term=&utm_content=Slide%20Switches&gclid=CjwKCAiAyc2BBhAaEiwA44-wW1u_PQGDGa_oh8w2mr0ynfvmBrpdQYzDDGVepTo7V-kk-DTQPDkUxxoCWQIQAvD_BwE), [AliExpress](aliexpress.com/item/32848360942.html))   
+          - AS11AH ([Mouser](https://www.mouser.com/ProductDetail/NKK-Switches/AS11AH/?qs=MODAV37v1mDLjalye5Scdw%3D%3D), [Digikey](https://www.digikey.com/en/products/detail/nkk-switches/AS11AH/2103411), ~$4/switch)
+          - MSK12C02-HB ([LCSC](https://lcsc.com/product-detail/Toggle-Switches_SHOU-HAN-MSK12C02-HB_C431541.html))
+          - [Switched JST Breakout Board](https://www.adafruit.com/product/1863) from Adafruit
+        - This is also useful for those who travel and store their keyboards where the keys might get activated
 - Toggling certain behaviors such as RGB only works on one side
     - [Open PR to invoke behaviors with different locality](https://github.com/zmkfirmware/zmk/pull/547). Once merged, this behavior should work as expected
     - A simple workaround is to add the keycode to both sides to toggle RGB
