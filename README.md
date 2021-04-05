@@ -15,7 +15,6 @@ This repo is for all of the build guides that I've done and any other relevant i
 - [IMK Corne Case](https://imkulio.com/build-guide.html)
 - [Lattice](https://drive.google.com/file/d/13NcHhRaNJkaU5gtg5ARNHPLRhIRx1Xzv/view?usp=sharing)
 - [Plaid](https://github.com/hsgw/plaid/tree/master/doc)
-- 
 
 
 # General
