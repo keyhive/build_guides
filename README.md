@@ -5,6 +5,7 @@ This repo is for all of the build guides that I've done and any other relevant i
 - [Lily58 Pro](docs/keyboards/lily58pro.md)
 - [UT47.2](docs/keyboards/UT47.2.md)
 - [crkbd v3](docs/keyboards/crkbd-v3.md)
+- [Milk v1](https://github.com/Keycapsss/2-milk-build-guide)
 
 # General
 
