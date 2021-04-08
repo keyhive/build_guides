@@ -114,14 +114,17 @@ Insert into holes. Solder in place on the bottom side of the pcb.
 
 ## Install OLED cover
 
-Install the 4 spacers into the holes just below the pro micro, screw from the bottom.
+- Remove any protective paper from the acrylic cover.
+- Install the 4 spacers into the holes just below the controller and screw from the bottom.
+- Align the OLED cover with the standoffs and screw into place from the top.
 
 ## Install switches
 
-Install the standoffs onto the switch plates.
-
-Insert switches into the plate. Begin by placing one on each of the corners of the PCB to give you some stability. Be cautious of bent pins when pushing the switch down. 
-
+- Install the standoffs onto the switch plates.
+- Insert switches into the plate.
+   - Begin by placing one on each of the corners of the PCB to give you some stability.
+   - Be cautious of bent pins when pushing the switch down. 
+- Turn over and screw bottom plate into place.
 ## Install encoder knobs
 
 Install the encoder knobs. Some are simply pressed onto the shaft, others fit loosely and require using a small hex wrench to secure with a set screw.
