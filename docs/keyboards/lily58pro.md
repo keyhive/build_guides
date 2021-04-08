@@ -45,7 +45,7 @@ Soldering diodes is relatively straightforward. Refer to [Soldering diodes](../b
 
 ## Solder Kailh hot swap sockets
 
-Refer to [Soldering Kailh hot swap sockets](.../basic/soldering-diodes.md) if you need further guidance.
+Refer to [Soldering Kailh hot swap sockets](../basic/soldering-kailh-hot-swap-sockets.md) if you need further guidance.
 
 ![Kailh hot swap sockets orientation](https://user-images.githubusercontent.com/6285554/57197682-3de1b580-6fa5-11e9-90b1-fca894e1e7d2.png)
 
