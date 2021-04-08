@@ -25,7 +25,7 @@ Available at: https://keyhive.xyz/shop/sofle
 
 Soldering diodes is relatively straightforward. Refer to [Soldering diodes](../basic/soldering-diodes.md) if you need further guidance.
 
-![2019-01-26](https://user-images.githubusercontent.com/6285554/51967206-1238c600-24b2-11e9-9617-01d8755c5b7f.jpg)
+![](../images/sofle-rgb/diodes.gif)
 
 ## Solder underglow LEDs
 
@@ -33,15 +33,21 @@ Soldering diodes is relatively straightforward. Refer to [Soldering diodes](../b
 
 Tin all the pads with a small bubble of solder, not too much. Place the 5050 LED on top and center. With some light pressure, hold the led in place while you flow the solder bubbles. I use an aluminum screwdriver which also acts as a heat sink to protect the LED from burning out. Test each LED as you go.
 
+![](../images/sofle-rgb/underglow-leds.gif)
+
 ## Solder per-key RGB LEDs
 
 > ⚠︎ LEDs can be very temperature sensitive, however this variant with the tabs are much easier to use and less prone to burning out. Still, take care to not allow too much heat to transfer.
 
 Tin one pads with a small amount of solder. Place the LED into the cutout. Hold the LED in place with tweezers, and flow the solder under the tab. Let cool and solidify. Apply a tiny bit of solder to the remaining tabs. Test each LED as you go.
 
+![](../images/sofle-rgb/ez-leds.gif)
+
 ## Solder Kailh hot swap sockets
 
 Refer to [Soldering Kailh hot swap sockets](../basic/soldering-kailh-hot-swap-sockets.md) if you need further guidance.
+
+![](../images/sofle-rgb/sockets.gif)
 
 ## Flash controller
 
@@ -53,9 +59,13 @@ Flash the controller (pro micro, Elite C, nice!nano, etc) with the firmware. Thi
 
 Refer to [Soldering the controller](../basic/soldering-the-controller.md) if you need further guidance.
 
+![](../images/sofle-rgb/controller.gif)
+
 ## Solder reset button
 
 Insert or align to holes. Solder in place.
+
+![](../images/sofle-rgb/reset-button.gif)
 
 ## Test the keyboard
 
@@ -69,11 +79,15 @@ After this, solder remaining components.
 
 Insert headers into holes. Use electrical tape to secure in place while you solder the holes on the bottom side of the PCB.
 
+![](../images/sofle-rgb/oleds.gif)
+
 > ⚠︎ The OLED is not required but **if you omit it, you must disable it in the firmware**. If you do not, you will experience "jittery" keystrokes as if some keys were lost while in transit. Disabling it in the firmware will fix this behavior.
 
 ## Solder TRRS jacks
 
 Insert into holes. Solder in place on the bottom side of the pcb.
+
+![](../images/sofle-rgb/trrs-jack.gif)
 
 ## Solder encoders
 
@@ -85,6 +99,8 @@ Insert into holes. Solder in place on the bottom side of the pcb.
    - These tabs **do not** need to be soldered.
 - Solder the 5 encoder pins in place.
 - Optional: clip the excess pin length.
+
+![](../images/sofle-rgb/encoder.jpg)
 
 ## Install OLED cover
 
