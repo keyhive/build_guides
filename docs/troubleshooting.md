@@ -1,6 +1,7 @@
 # A column or a row of keys do not respond
 
 Ensure that the controller is soldered and connected completely. Reflow the solder. Replace if necessary.
+Also, check out this really good video from 1up Keyboards that explains how and when to do a bridge.
 
 # A single switch does not respond
 
