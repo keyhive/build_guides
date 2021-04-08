@@ -31,7 +31,12 @@ Soldering diodes is relatively straightforward. Refer to [Soldering diodes](../b
 
 > ⚠︎ LEDs can be very temperature sensitive. Be _very careful_. Consider setting your soldering to a low temp (about 200 C), using a fine tip, adding flux, and/or using a hot air station.
 
-Tin all the pads with a small bubble of solder, not too much. Place the 5050 LED on top and center. With some light pressure, hold the led in place while you flow the solder bubbles. I use an aluminum screwdriver which also acts as a heat sink to protect the LED from burning out. Test each LED as you go.
+- Tin all the pads with a small bubble of solder, not too much.
+- Orient the notched corner of the pixel with the line with the right angle shown on the silkscreen.
+- Place the 5050 LED on top and center. 
+- With some light pressure, hold the led in place while you flow the solder bubbles.
+   - I use an aluminum screwdriver which also acts as a heat sink to protect the LED from burning out.
+- Test each LED as you go.
 
 ![](../images/sofle-rgb/underglow-leds.gif)
 
@@ -39,7 +44,12 @@ Tin all the pads with a small bubble of solder, not too much. Place the 5050 LED
 
 > ⚠︎ LEDs can be very temperature sensitive, however this variant with the tabs are much easier to use and less prone to burning out. Still, take care to not allow too much heat to transfer.
 
-Tin one pads with a small amount of solder. Place the LED into the cutout. Hold the LED in place with tweezers, and flow the solder under the tab. Let cool and solidify. Apply a tiny bit of solder to the remaining tabs. Test each LED as you go.
+- Tin one pad with a small amount of solder. 
+- Place the LED into the cutout, orienting the notched tab with the line with the right angle on the silkscreen.
+- Hold the LED in place with tweezers, and flow the solder under the tab. 
+- Let cool and solidify. 
+- Apply a tiny bit of solder to the remaining tabs. 
+- Test each LED as you go.
 
 ![](../images/sofle-rgb/ez-leds.gif)
 
