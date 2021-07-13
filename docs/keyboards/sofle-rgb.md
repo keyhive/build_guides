@@ -115,16 +115,28 @@ Insert into holes. Solder in place on the bottom side of the pcb.
 ## Install OLED cover
 
 - Remove any protective paper from the acrylic cover.
-- Install the 4 spacers into the holes just below the controller and screw from the bottom.
+- Locate the four (4) spacers that are slightly longer than the rest.
+- Install the spacers into the holes just below the controller and screw from the bottom.
+- Remove any protective plastic from the OLED screen.
 - Align the OLED cover with the standoffs and screw into place from the top.
 
 ## Install switches
 
-- Install the standoffs onto the switch plates.
+- Install the standoffs onto the bottom side of the switch plates.
 - Insert switches into the plate.
-   - Begin by placing one on each of the corners of the PCB to give you some stability.
-   - Be cautious of bent pins when pushing the switch down. 
+   - Begin by placing one on each of the corners of the PCB to give you some stability. Basically anywhere where they'll stay in place to help align the rest.
+   - Be cautious of bent pins when pushing the switch down.
+- Insert remaining switches.
 - Turn over and screw bottom plate into place.
+
+If the switches are too loose in the plate and keeps slipping down while pushing downward to add other switches, try this instead:
+
+- install the standoffs onto the plate.
+- lay the plate over top of the pcb and hold in hand, flattened together.
+- insert the switches into the pcb (while not worrying about making sure they're secured into the plate).
+- once all the switches are in place, put it down on hard flat surface with the standoffs holding everything up
+- Slowly and firmly push down on all the whole set of until they all "click into" the plate.
+
 ## Install encoder knobs
 
 Install the encoder knobs. Some are simply pressed onto the shaft, others fit loosely and require using a small hex wrench to secure with a set screw.
