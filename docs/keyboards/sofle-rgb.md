@@ -31,6 +31,11 @@ Soldering diodes is relatively straightforward. Refer to [Soldering diodes](../b
 
 > ⚠︎ LEDs can be very temperature sensitive. Be _very careful_. Consider setting your soldering to a low temp (about 200 C), using a fine tip, adding flux, and/or using a hot air station.
 
+This is the LED order:
+
+![](../images/sofle-rgb/LED_order%5B1%5D.png)
+
+
 - Tin all the pads with a small bubble of solder, not too much.
 - Orient the notched corner of the pixel with the line with the right angle shown on the silkscreen.
 - Place the 5050 LED on top and center. 
