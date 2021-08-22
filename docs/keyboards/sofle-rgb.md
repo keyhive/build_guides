@@ -68,7 +68,52 @@ Refer to [Soldering Kailh hot swap sockets](../basic/soldering-kailh-hot-swap-so
 
 Flash the controller (pro micro, Elite C, nice!nano, etc) with the firmware. This ensures that the controller works completely **before** soldering it permanently to the board.
 
-[TODO: Add link to firmware files](#todo)
+### Windows or MAC
+
+You need:
+
+- [Download this firmware](https://cdn.discordapp.com/attachments/829512635715158057/841347681774993418/keyhive_sofle_rev1_via.hex)
+- [Download the las version of QMK toolbox](https://github.com/qmk/qmk_toolbox/releases)
+
+Steps:
+
+- Install QMK toolbox and open it
+- Open the firmware file
+- Put the keyboards in flash mode (join the GND pad with reset pad or pressing the reset button.)
+- Press flash button
+- Repeat with the other part of the keyboard
+
+### Linux (the hard way)
+
+#### Prepare the environment
+
+```sh
+git clone https://github.com/keyhive/qmk_firmware.git
+cd qmk_firmware
+python3 -m pip install qmk
+python3 -m pip install -U -r ./requirements.txt
+make git-submodule
+qmk setup -H $(pwd)
+qmk compile -kb sofle/rev2 -km keyhive_via
+```
+
+In this point you have 2 options. Use a TRRS cable to connect the parts of the keyboard or use each part connected individually thrown usb cable.
+
+#### If you want use USB in each cable
+
+- Connect the left part of the keyboard to the USB and follow the instructions (just press the reset key as required).
+  - For ProMicro: `make sofle/rev2:keyhive_via:avrdude-split-left`
+  - For Elite-C: `make sofle/rev2:keyhive_via:dfu-split-left`
+- and now again with the other part of the keyboard
+  - For ProMicro: `make sofle/rev2:keyhive_via:avrdude-split-right`
+  - For Elite-C: `make sofle/rev2:keyhive_via:dfu-split-right`
+
+#### If you want use TRRS to joining the parts
+
+In each part you want to flash the same firmware:
+
+- For ProMicro `qmk flash -kb sofle/rev1 -km keyhive_via -bl avrdude`
+- For Elite-C `qmk flash -kb sofle/rev1 -km keyhive_via -bl dfu`
 
 ## Solder controller
 
