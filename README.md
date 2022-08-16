@@ -6,6 +6,7 @@ This repo is for all of the build guides that I've done and any other relevant i
 - [UT47.2](docs/keyboards/UT47.2.md)
 - [crkbd v3](docs/keyboards/crkbd-v3.md)
 - [Milk v1](https://github.com/Keycapsss/2-milk-build-guide)
+- [Milk v2 - current version](https://github.com/keyhive/build_guides/blob/master/docs/keyboards/milk_v2.md)
 - [Helix v1](https://github.com/MakotoKurauchi/helix/blob/master/Doc/buildguide_en.md)
 - [Uno v1](https://www.youtube.com/watch?v=pZIjOFOcIeY)
 - [Uno v2](https://www.youtube.com/watch?v=le9HUX18wIM) and firmware [here](https://cdn.discordapp.com/attachments/721955376567681024/799175836258402364/uno-via-coppi-pasta.zip) 
